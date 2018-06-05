@@ -1,7 +1,4 @@
 #include<stdlib.h>
-#include <algorithm>
-#include <cctype>
-#include <functional>
 #include<conio.h>
 #include<cstring>
 #include<iostream>
@@ -14,17 +11,7 @@
 #define SUCCESS 0
 #define ADMIN_PASS "OOP"
 using namespace std;
-std::string& stoupper( const std::string& s )
-  {
-  std::string result( s );
-  std::transform(
-    s.begin(),
-    s.end(),
-    result.begin(),
-    std::ptr_fun <int, int> ( std::toupper )
-    );
-  return result;
-  }
+
 int flag,subject=0;
 inline void clrscr(){
     system("cls");
@@ -33,7 +20,7 @@ inline void clrscr(){
 inline void title(){
     clrscr();
 	cout<<"==============================================================================="<<endl;
-	cout<<"**************** Institute Student Database Management System *****************"<<endl;
+	cout<<"***************************Student Database Manager****************************"<<endl;
 	cout<<"==============================================================================="<<endl;
 }
 
